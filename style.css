@@ -1,0 +1,337 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e1eefc;
+    color: #333;
+}
+
+/* Styles de l'en-tête */
+.navbar {
+    background-color: #000; /* Noir pour la barre de navigation */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white; /* Titre en blanc */
+}
+
+.navbar nav {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    text-align: center; /* Centre le texte */
+    background-image: url('../images/luxury-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto; /* Centre le paragraphe */
+    color: #444; /* Couleur plus foncée */
+}
+
+/* Section Nos Services */
+.nos-services-container {
+    display: flex;
+    justify-content: center; /* Centre la section horizontalement */
+    align-items: center; /* Centre la section verticalement */
+    gap: 20px; /* Espacement entre les cartes */
+    margin: 40px auto; /* Centre le conteneur et ajoute de l'espace autour */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 1200px; /* Limite la largeur maximale de la section */
+    text-align: center; /* Centre le contenu */
+}
+
+/* Cartes */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Largeur fixe pour toutes les cartes */
+    height: 500px; /* Augmenter la hauteur totale pour éviter la superposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center;
+    margin: auto; /* Centre chaque carte individuellement */
+}
+
+.card img {
+    max-width: 100%;
+    height: 130px; /* Ajustement de la hauteur pour éviter de couper l'image */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Titre de la carte */
+.card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 10px 0; /* Ajouter de l'espace sous le titre */
+    height: 60px; /* Augmenter la hauteur pour donner plus d'espace */
+    border-radius: 8px;
+}
+
+/* Section description pour alignement */
+.card .description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* Ajouter de l'espace en dessous pour alignement */
+    height: 60px; /* Augmenter la hauteur pour éviter la superposition */
+    line-height: 1.4;
+}
+
+/* Prix */
+.card .price {
+    font-weight: bold;
+    margin: 10px 0;
+    height: 30px; /* Hauteur pour le prix */
+}
+
+/* Bouton En savoir plus */
+.card .btn {
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    margin-top: auto;
+}
+
+/* Pied de page */
+footer {
+    background-color: #000; /* Noir pour le pied de page */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h3 {
+    margin: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Espacement et alignement des sections */
+.centered {
+    text-align: center;
+    margin: 0p 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Adapter la largeur pour les écrans plus petits */
+    }
+
+    .nos-services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Style pour l'image ronde */
+.logo-section {
+    text-align: center; /* Centrer l'image */
+    margin-bottom: 20px; /* Espacement en dessous */
+}
+
+.logo-image {
+    width: 150px; /* Ajustez la taille si besoin */
+    height: 150px;
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover; /* Ajuster l'image dans le cercle sans la déformer */
+    border: 2px solid #333; /* Bordure de l'image, ajustez la couleur si nécessaire */
+}
+
+/* Section Caractéristiques */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4c4c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+section ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Pied de page Contact */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #ff4c4c;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: #ff4c4c;
+}
+
+/* Effets d'animation et de transition */
+.navbar nav a,
+footer p {
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover,
+footer p:hover {
+    color: #ff4c4c;
+}
+
+
+
+/* base.css */
+body {
+    background-color: #f4f4f8;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #1e90ff;
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #f1c40f;
+    --background-light: #f4f4f8;
+    --text-color: #333;
+    --font-main: 'Arial', sans-serif;
+}
+
+/* layout.css */
+
+/* Section Nos Services */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px; /* Espace entre les phrases */
+}
+
+/* Grille pour la liste de voitures */
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Contact */
+#contact h3 {
+    font-size: 1.8rem;
+    color: #f1c40f;
+    margin-bottom: 10px; /* Espace avant le paragraphe */
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px; /* Espace après le titre */
+    text-align: center;
+}
+
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, a, button {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
